@@ -37,4 +37,6 @@ def data_process(csv):
     target_int = [[target_letter_to_int.get(letter, target_letter_to_int['<UNK>'])
                    for letter in line] + [target_letter_to_int['<EOS>']] for line in q_analysis]
 
+    print('修改github并提交！')
+
     return(tk_info,source_int_to_letter,source_letter_to_int,target_int_to_letter,target_letter_to_int,source_int,target_int)
